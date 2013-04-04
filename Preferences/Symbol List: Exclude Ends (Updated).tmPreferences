@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Exclude Ends (Updated)</string>
+	<key>scope</key>
+	<string>entity.name.function.subroutine.end, entity.name.function.function.end, entity.name.function.module.end, entity.name.program.end</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>0</integer>
+	</dict>
+	<key>uuid</key>
+	<string>04827D00-DDC4-4CBA-B1A1-D5E401A38231</string>
+</dict>
+</plist>

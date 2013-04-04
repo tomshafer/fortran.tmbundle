@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Include Programs and Mark</string>
+	<key>scope</key>
+	<string>source.fortran meta.container.program entity.name.program</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/^(.*)$/P  $1/</string>
+	</dict>
+	<key>uuid</key>
+	<string>E1DDBA23-FB0E-4746-BFDA-2D8EC0070CFE</string>
+</dict>
+</plist>

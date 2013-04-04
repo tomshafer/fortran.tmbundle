@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>isDisabled</key>
+	<false/>
+	<key>name</key>
+	<string>Symbol List: Exclude Called Subroutine</string>
+	<key>scope</key>
+	<string>source.fortran meta.call entity.name.function.subroutine</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>0</integer>
+	</dict>
+	<key>uuid</key>
+	<string>1B74C329-3D5F-4F22-8748-9C072C6328F6</string>
+</dict>
+</plist>
