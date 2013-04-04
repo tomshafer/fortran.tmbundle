@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Mark Modules</string>
+	<key>scope</key>
+	<string>entity.name.function.module</string>
+	<key>settings</key>
+	<dict>
+		<key>symbolTransformation</key>
+		<string>s/^(.*)$/M  $1/</string>
+	</dict>
+	<key>uuid</key>
+	<string>9B9D4901-7077-4726-BFB3-CA9CF394FBD0</string>
+</dict>
+</plist>
