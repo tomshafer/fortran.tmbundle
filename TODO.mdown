@@ -1,0 +1,10 @@
+# To-Do
+
+## Language Grammars
+- Branch new language grammar into F77 (with e.g. dabs()/cabs()) and F90 parts as before
+- Fix hacky way of scoping ends of program units. I.e. move from `entity.name.function.module.end`.
+
+## Preferences
+- More selective code folding
+- Is there a good way to exclude folding on one liners such as the following?
+        program [program_name]; [ etc. ]; end program
