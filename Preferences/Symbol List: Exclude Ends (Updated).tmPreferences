@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List: Exclude Ends (Updated)</string>
 	<key>scope</key>
-	<string>entity.name.function.subroutine.end, entity.name.function.function.end, entity.name.function.module.end, entity.name.program.end</string>
+	<string>meta.control.end entity.name.function.subroutine, meta.control.end entity.name.function.function, meta.control.end entity.name.function.module, meta.control.end entity.name.program</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>

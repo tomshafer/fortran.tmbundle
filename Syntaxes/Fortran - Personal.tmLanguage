@@ -488,23 +488,28 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?i)(?&lt;=(?:^|;))\s*(end)\s*(program)\s*(\2)?</string>
+					<string>(?i)(?&lt;=(?:^|;))\s*((end)\s*(program)\s*(\2)?)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.fortran</string>
+							<string>meta.control.end.fortran</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.program.fortran</string>
+							<string>keyword.control.fortran</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.program.end.fortran</string>
+							<string>storage.type.program.fortran</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.program.fortran</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -536,23 +541,28 @@
 					<key>comment</key>
 					<string>Use entity.name.function.module for syntax highlighting</string>
 					<key>end</key>
-					<string>(?i)^\s*(end)\s*(module)\s*(\2)?</string>
+					<string>(?i)(?&lt;=(?:^|;))\s*((end)\s*(module)\s*(\2)?)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.fortran</string>
+							<string>meta.control.end.fortran</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.module.fortran</string>
+							<string>keyword.control.fortran</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.function.module.end.fortran</string>
+							<string>storage.type.module.fortran</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.module.fortran</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -584,23 +594,28 @@
 					<key>comment</key>
 					<string>In captures, use entity.name.function to appease highlighting</string>
 					<key>end</key>
-					<string>(?i)^\s*(end)\s+(subroutine)\s*(\2)?</string>
+					<string>(?i)(?&lt;=(?:^|;))\s*((end)\s+(subroutine)\s*(\2)?)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.fortran</string>
+							<string>meta.control.end.fortran</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.subroutine.fortran</string>
+							<string>keyword.control.fortran</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.function.subroutine.end.fortran</string>
+							<string>storage.type.subroutine.fortran</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.subroutine.fortran</string>
 						</dict>
 					</dict>
 					<key>name</key>
@@ -640,23 +655,28 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?i)^\s*(end)\s+(function)\s*(\3)?</string>
+					<string>(?i)(?&lt;=(?:^|;))\s*((end)\s+(function)\s*(\3)?)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.fortran</string>
+							<string>meta.control.end.fortran</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>storage.type.function.fortran</string>
+							<string>keyword.control.fortran</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.name.function.function.end.fortran</string>
+							<string>storage.type.function.fortran</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.function.fortran</string>
 						</dict>
 					</dict>
 					<key>name</key>
