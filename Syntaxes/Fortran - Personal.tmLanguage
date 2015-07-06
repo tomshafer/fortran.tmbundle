@@ -250,8 +250,8 @@
 					<key>match</key>
 					<string>\b(?ix:
                         (?: go\s*to | assign | to | (end\s*)?if | then | else | else\s*if | continue |
-                            \\ | stop | pause | (end\s*)?do | while | cycle | end | select\s+case |
-                            case(?:\s+default)? | end\s+select | use | only | (?:end\s+)?forall
+                            \\ | stop | pause | (end\s*)?do | while | cycle | exit | end | select\s+case |
+                            case(?:\s+default)? | (end\s*)?select | use | only | (?:end\s+)?forall
                          )
                      )\b</string>
 					<key>name</key>
@@ -268,7 +268,7 @@
 				<dict>
 					<key>match</key>
 					<string>\b(?ix:
-                        (?: open | close | read | write | print | inquire | backspace | endfile | format )
+                        (?: open | close | read | write | print | inquire | backspace | endfile | format | rewind )
                      )\b</string>
 					<key>name</key>
 					<string>keyword.control.io.fortran</string>
@@ -311,7 +311,7 @@
 					<key>match</key>
 					<string>(?ix:
                                  (?: \.and\. | \.or\. | \.eq\. | \.lt\. | \.le\. | \.gt\. | \.ge\. |
-                                     \.ne\. | \.not\. | \.eqv\. | \.neqv\. | \=\={2,3} | \/\= | \&gt;\= |
+                                     \.ne\. | \.not\. | \.eqv\. | \.neqv\. | \=\={1,2} | \/\= | \&gt;\= |
                                      (?&lt;!\=)\&gt; | \&lt; | \&lt;\=
                                  )
                               )</string>
@@ -694,7 +694,7 @@
 					<string>(?ix:
                   ^[ ]*
                   ( integer | real | double(\s+precision)? | complex | logical | character |
-                     block\sdata | operator | assignment ) (?!(\s*(subroutine|function))) (?=.*::)
+                     block\sdata | operator | assignment | type ) (?!(\s*(subroutine|function))) (?=.*::)
                )</string>
 					<key>beginCaptures</key>
 					<dict>
@@ -718,7 +718,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(?&lt;=(?:^|;))\s*(?i:(use)\s*([a-z]+[a-z0-9_]*))</string>
+					<string>(?&lt;=(?:^|;))\s*(?i:(use)\s+([a-z]+[a-z0-9_]*))</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -959,6 +959,12 @@
 					<string>(?i)\b(end\s+)?function\b</string>
 					<key>name</key>
 					<string>storage.type.function.fortran</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?i)\b(end\s+)?type\b</string>
+					<key>name</key>
+					<string>storage.type.type.fortran</string>
 				</dict>
 				<dict>
 					<key>match</key>

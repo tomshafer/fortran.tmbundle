@@ -379,7 +379,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^[Cc](?=\b|[Cc])</string>
+			<string>^[Cc]</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>0</key>
